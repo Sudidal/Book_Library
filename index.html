@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button class="add-book-btn">+</button>
+    <dialog data-modal>
+        <form method="dialog">
+            <h3>Add new book</h3>
+            <div>
+                <label for="title-input">Book's Title</label>
+                <input type="text" name="title" id="title-input" placeholder="Title" required>
+            </div>
+            <div>
+                <label for="author">Book's Author</label>
+                <input type="text" name="author" id="author-input" placeholder="Author" required>
+            </div>
+            <div>
+                <label for="pages-input">Book's Pages</label>
+                <input type="number" name="pages" id="pages-input" placeholder="pages"  required>
+            </div>
+            <div>
+                <label for="read-input">I have read the book</label>
+                <input type="checkbox" name="read" id="read-input">
+            </div>
+                <button type="submit" id="addbtn">Add Book</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+    </dialog>
+    
+    <div class="books-container">
+        <div class="book-card book-template" hidden>
+            <h3 class="title">title</h3>
+            <p class="author">Author</p>
+            <p class="pages">Pages</p>
+            <p class="read">I have read this book</p>
+            <button class="deletebtn">Delete</button>
+        </div>
+
+    </div>
+</body>
+</html>
